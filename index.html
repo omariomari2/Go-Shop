@@ -583,6 +583,24 @@ only screen and (max-device-width: 480px) {
 	.c-dd-item .c-img-contain.dd-thumb {
 		display: none !important;
 	}
+
+	/* Mobile sidebar auth actions */
+	.c-mobile-auth {
+		margin-top: 1.5em;
+		padding: 1em 0 0;
+		border-top: 1px solid currentColor;
+		display: grid;
+		gap: 0.75em;
+	}
+	.c-mobile-auth .c-btn {
+		width: 100%;
+		justify-content: center;
+	}
+	.c-mobile-auth .c-btn.is-secondary {
+		background: transparent;
+		border: 1px solid currentColor;
+		color: inherit;
+	}
 }
 
 
@@ -915,6 +933,25 @@ only screen and (max-device-width: 480px) {
   <div class="t-body-2 is-bold">Track Orders</div>
 </a>
 </div>
+</div>
+<div class="c-mobile-auth">
+  <a href="#" class="c-btn is-large w-inline-block">
+    <div class="c-btn-bg"></div>
+    <div class="c-btn-inner">
+      <div class="c-btn-txt">
+        <div class="c-btn-label line-1">Sign in</div>
+        <div class="c-btn-label line-2">Sign in</div>
+      </div>
+    </div>
+  </a>
+  <a href="#" class="c-btn is-large is-secondary w-inline-block">
+    <div class="c-btn-inner">
+      <div class="c-btn-txt">
+        <div class="c-btn-label line-1">Create account</div>
+        <div class="c-btn-label line-2">Create account</div>
+      </div>
+    </div>
+  </a>
 </div>
 </div>
 <div class="c-dd-link-mobile">
