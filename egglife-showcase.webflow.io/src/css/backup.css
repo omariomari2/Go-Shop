@@ -1526,3 +1526,8 @@ figcaption{text-align:center;margin-top:5px}
   font-style: normal;
   font-display: swap;
 }
+/* Products section image rounding (Esi, Fruit Vendor, etc.) */
+.swiper.product .c-img-contain.product-wrap,
+.swiper.product .c-img-contain.product-bag {
+  border-radius: 12px;
+}
