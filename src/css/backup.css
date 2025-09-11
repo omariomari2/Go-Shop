@@ -1006,10 +1006,10 @@ figcaption{text-align:center;margin-top:5px}
 .c-hero-slider-bg{position:absolute;top:0%;bottom:0%;left:0%;right:0%}
 .re-title_rt{transform:translateY(-1.1em)}
 .c-recipes-single_lt{width:100%;height:76%;flex-direction:column;justify-content:space-between;align-items:stretch;display:flex}
-.c-cookie{z-index:2000;max-width:24em;color:#303a4d;background-color:#f4f2e6;border:2px solid #303a4d;border-radius:16px;padding:1.5em 1.25em;display:none;position:fixed;top:auto;bottom:1.25em;left:auto;right:1.25em}
-.c-cookie-btn{width:100%;color:#303a4d;text-align:center;letter-spacing:-.02em;background-color:#f4f2e6;border:2px solid #303a4d;border-radius:10em;padding:.5em 2em .7em;font-family:Sofiapro,sans-serif;font-size:1vw;font-weight:700;transition:color .4s,background-color .4s}
-.c-cookie-btn:hover{color:#f4f2e6;background-color:#303a4d}
-.c-cookie-txt{width:95%}
+.c-cookie{}
+.c-cookie-btn{}
+.c-cookie-btn:hover{}
+.c-cookie-txt{}
 @media screen and (max-width:991px){.c-header{height:4em}
 .o-wrapper.recipes-hub{overflow:visible}
 .c-section.hm-community{margin-top:-1px;padding-top:4.5em}
