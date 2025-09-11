@@ -433,24 +433,6 @@ a {
   font-family: inherit !important;
   color: hsla(50.99999999999997, 39.00%, 93.00%, 0.50);
   appearance: none;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #92969A;
-  padding: 0.5em 0;
-  font-size: 16px;
-  width: 100%;
-}
-
-.c-form-input.community-select:focus {
-  outline: none;
-  border-bottom-color: #FED141;
-  color: #F4F2E6;
-}
-
-.c-form-input.community-select option {
-  background-color: #303A4D;
-  color: #F4F2E6;
-  padding: 0.5em;
 }
 
 /* FORM AUTOFILL */
@@ -1160,200 +1142,127 @@ input:-webkit-autofill:active {
 </div>
 </div>
 <div class="o-col _w-9 md-w-24">
-  <div class="c-form klaviyo-culinary w-embed">
-  <div class="klaviyo-form-V47GMJ">
-  <form method="get" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" class="klaviyo_gdpr_embed_xevcat" name="email-form-culinary" data-name="Email Form Culinary" target="_blank" action="//manage.kmail-lists.com/subscriptions/subscribe" novalidate="novalidate" id="email_signup_culinary">
-    <div class="c-form-item">
-      <input class="c-form-input klaviyo-culinary w-input" maxlength="256" name="email" data-name="Email" placeholder="Email address" type="email" id="k_id_email_culinary" required=""/>
+  <form id="contactForm" class="contact-form" method="post" action="#">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Name" required class="form-input"/>
     </div>
-    <div class="c-form-item">
-      <select class="c-form-input klaviyo-culinary w-input" name="region" data-name="Region" id="k_id_region_culinary" required="">
-        <option value="">Select Region</option>
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Email" required class="form-input"/>
+    </div>
+    <div class="form-group">
+      <select name="region" required class="form-input">
+        <option value="" selected disabled>Region</option>
         <option value="Greater Accra">Greater Accra</option>
         <option value="Eastern">Eastern</option>
         <option value="Ashanti">Ashanti</option>
         <option value="Other">Other</option>
       </select>
     </div>
-    <div class="c-form-item">
-      <button type="submit" class="c-form-submit">Join Community</button>
-    </div>
-    <input type="hidden" name="g" value="XeVcaT">
+    <button type="submit" class="c-btn is-large w-inline-block">
+      <div class="c-btn-bg"></div>
+      <div class="c-btn-inner">
+        <div class="c-btn-txt">
+          <div class="c-btn-label line-1">Send</div>
+          <div no-click class="c-btn-label line-2">Send</div>
+        </div>
+        <div class="c-btn-icon-wrap">
+          <div class="c-btn-icon w-embed">
+            <svg width="1.9375em" height="2em" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30.4 17.3333C30.4 25.9556 23.5947 32 15.2 32C6.80527 32 0 25.2444 0 17.3333C0 9.42222 6.80527 0 15.2 0C23.5947 0 30.4 8.71111 30.4 17.3333Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="c-btn-icon-arrow w-embed">
+            <svg aria-hidden="true" width="0.75em" height="0.75em" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 6H9.5" stroke="#303A4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 2.5L9.5 6L6 9.5" stroke="#303A4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </button>
   </form>
 </div>
 
+<!-- Klaviyo form styling removed -->
+
 <style>
-input[type]:-webkit-autofill,
-input[type=email]:-webkit-autofill,
-input[type]:-webkit-autofill:hover,
-input[type=email]:-webkit-autofill:hover,
-input[type]:-webkit-autofill:focus, 
-input[type=email]:-webkit-autofill:focus,
-input[type]:-webkit-autofill:active,
-input[type=email]:-webkit-autofill:active {
+/* Minimal text-only contact form (no backgrounds/boxes) */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 520px;
 }
-
-.c-form.klaviyo-culinary.w-embed {
-	padding: 0 !important;
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
 }
-
-.klaviyo-culinary input[type=text],
-.klaviyo-culinary input[type=email] {
-  border-left: 0px !important;
-  border-right: 0px !important;
-  border-top: 0px !important;
-  border-bottom: 1px solid #92969A !important;
-  padding-top: 0px !important;
-  padding-right: 0px !important;
-  padding-bottom: 1em !important;
-  padding-left: 0px !important;
-  background-color: transparent !important;
-  transition-property: border-color !important;
-  transition-duration: 400ms !important;
-  transition-timing-function: ease !important;
-  box-shadow: none !important;
-  font-size: 20px !important;
-  font-family: Sofiapro !important;
-  font-weight: 400 !important;
-  margin-bottom: 2.5em !important;
-  color: #7A7F87 !important;
+.contact-form .form-input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  border-radius: 0;
+  padding: 1rem 0;
+  color: inherit;
+  font: inherit;
 }
-/*
-.klaviyo-culinary input[type=text]:focus,
-.klaviyo-culinary input[type=text]:focus-visible,
-.klaviyo-culinary input[type=email]:focus,
-.klaviyo-culinary input[type=email]:focus-visible {
-  border-bottom-color: #F4F2E6 !important;
-  color: #F4F2E6 !important;
-  box-shadow: none !important;
-}
-*/
-.klaviyo-culinary ::placeholder {
-	color: #92969A !important;
-  font-family: Sofiapro !important;
-  font-size: 20px !important;
-  font-weight: 400 !important;
-}
-
-
-[data-testid="form-row"]:last-child button {
-	background-color: var(--clr-yellow-01) !important;
-  position: relative !important;
-  overflow: hidden !important;
-  color: var(--clr-charcoal-01) !important;
-  font-family: Sofiapro !important;
-  font-size: 20px !important;
-  font-weight: 600 !important;
-  padding-right: 2em !important;
-  padding-left: 2em !important;
-  padding-top: 1.25em;
-  padding-bottom: 1.25em;
-}
-
-
-.klaviyo-culinary input[type]:hover {
-	color: #F4F2E6 !important;
-}
-
-.c-form-submit {
-  background-color: #FED141;
-  color: #303A4D;
-  border: none;
-  padding: 0.75em 1.5em;
-  font-size: 16px;
-  font-weight: 600;
+/* Dropdown styling */
+.contact-form select.form-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  padding-right: 2rem;
+  min-height: 2.75rem;
+  line-height: 1.6;
+  color: inherit;
   cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.25rem center;
+  background-size: 14px 14px;
 }
-
-.c-form-submit:hover {
-  background-color: #E6C73A;
+/* Show placeholder-like style for the disabled Region option */
+.contact-form select.form-input:required:invalid {
+  opacity: 0.7;
 }
-
+.contact-form .form-input::placeholder {
+  color: inherit;
+  opacity: 0.7;
+}
+.contact-form .form-input:focus {
+  outline: none;
+  border-bottom-color: currentColor;
+}
+.contact-form .form-submit {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  padding: 0.75rem 0 0.25rem;
+  margin-top: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  width: fit-content;
+}
+.contact-form .form-submit:hover {
+  text-decoration: underline;
+}
 @media only screen and (max-width: 991px) {
-	.klaviyo-culinary input[type],
-  .klaviyo-culinary ::placeholder {
-  	font-size: 14px !important;
-  }
-  [component] button {
-  	width: 100% !important;
-  }
-  [component] {
-  	width: 100% !important;
-  }
+  .contact-form .form-input { font-size: 14px; }
 }
+</style>
 
-[data-testid]:nth-child(5) {
-	border-left: 0px !important;
-  border-right: 0px !important;
-  border-top: 0px !important;
-  border-bottom: 1px solid #92969A !important;
-	margin-bottom: 4em !important;
-  padding-top: 0px !important;
-  padding-right: 0px !important;
-  padding-left: 0px !important;
-  background-color: transparent !important;
-  transition-property: border-color !important;
-  transition-duration: 400ms !important;
-  transition-timing-function: ease !important;
-  box-shadow: none !important;
-  font-family: Sofiapro !important;
-  font-weight: 400 !important;
-}
 
-[data-testid]:nth-child(5) div {
-  padding-left: 0px !important;
-}
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active {
-  box-shadow: none;
-  background-color: transparent !important;
-  color: initial !important;
-  transition: background-color 5000s ease-in-out 0s;
-  -webkit-box-shadow: none;
-  -webkit-text-fill-color: initial !important;
-}
 
-input#downshift-0-input:-webkit-autofill,
-input#downshift-0-input:-webkit-autofill:hover, 
-input#downshift-0-input:-webkit-autofill:focus, 
-input#downshift-0-input:-webkit-autofill:active {
-}
 
-#downshift-0-menu {
-	max-height: 400px !important;
-  border-top: 0 !important;
-  padding-left: 16px !important;
-  transition: padding-left 0.3s ease-in-out, color 0.3s ease-in-out;
-}
 
-#downshift-0-input {
-  font-size: 20px !important;
-  font-family: Sofiapro !important;
-  font-weight: 400 !important;
-}
 
-#downshift-0-input[aria-expanded="false"] {
-  transition: padding-left 0.3s ease-in-out, color 0.3s ease-in-out;
-}
 
-#downshift-0-input[aria-expanded="true"] {
-	color: #fff !important;
-  padding-left: 16px !important;
-  transition: padding-left 0.3s ease-in-out, color 0.3s ease-in-out;
-}
 
-.needsclick.kl-private-reset-css-Xuajs1 {
-/*	border: 1px solid rgba(48, 58, 77, 0) !important; */
-}
 
-[data-testid]:nth-child(5) div {
-	border: none !important;
-}
+
 </style>
 </div>
 </div>
@@ -2358,17 +2267,6 @@ input#downshift-0-input:-webkit-autofill:active {
   <input type="hidden" name="g" value="XeVcaT">
 </div>
 </div>
-  <div class="c-form-item submit">
-  <div class="klaviyo_field_group">
-  <select class="c-form-input community-select w-input" name="region" data-name="Region" id="k_id_region" tabindex="-1" required="">
-    <option value="">Select Region</option>
-    <option value="Greater Accra">Greater Accra</option>
-    <option value="Eastern">Eastern</option>
-    <option value="Ashanti">Ashanti</option>
-    <option value="Other">Other</option>
-  </select>
-</div>
-</div>
   <div class="c-line footer-submit">
   
 </div>
@@ -2790,14 +2688,6 @@ function observeEditor() {
     custom_success_message: true,
 		extra_properties: {
       $signup_location: 'Home Page'
-    }
-  });
-
-  KlaviyoSubscribe.attachToForms('#email_signup_culinary', {
-    hide_form_on_success: true,
-    custom_success_message: true,
-		extra_properties: {
-      $signup_location: 'Community Section'
     }
   });
 </script>
