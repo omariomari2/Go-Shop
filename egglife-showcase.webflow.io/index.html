@@ -433,6 +433,24 @@ a {
   font-family: inherit !important;
   color: hsla(50.99999999999997, 39.00%, 93.00%, 0.50);
   appearance: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #92969A;
+  padding: 0.5em 0;
+  font-size: 16px;
+  width: 100%;
+}
+
+.c-form-input.community-select:focus {
+  outline: none;
+  border-bottom-color: #FED141;
+  color: #F4F2E6;
+}
+
+.c-form-input.community-select option {
+  background-color: #303A4D;
+  color: #F4F2E6;
+  padding: 0.5em;
 }
 
 /* FORM AUTOFILL */
@@ -1095,7 +1113,7 @@ input:-webkit-autofill:active {
   <div class="swiper-slide hm-product js-hero-slider__product">
   <div class="c-img-contain slider is-1">
   <!-- <img src="https://cdn.prod.website-files.com/6448cbe9ce99d3adb517fb98/6448cbe9ce99d3aedc17fc8c_hero-img-05.webp" loading="eager" alt="package of original egglife egg white wraps with a hand holding a fajita wrap" class="c-img"/> -->
-  <img src="src/images/cart.png" loading="eager" alt="package of original egglife egg white wraps with a hand holding a fajita wrap" class="c-img"/>
+  <img src="src/images/apple-inhand.png" loading="eager" alt="package of original egglife egg white wraps with a hand holding a fajita wrap" class="c-img"/>
 </div>
 </div>
 <div class="swiper-slide hm-product js-hero-slider__product">
@@ -1107,13 +1125,13 @@ input:-webkit-autofill:active {
 <div class="swiper-slide hm-product js-hero-slider__product">
   <div class="c-img-contain slider is-3">
   <!-- <img src="https://cdn.prod.website-files.com/6448cbe9ce99d3adb517fb98/6448cbe9ce99d3382c17fc8d_hero-img-03.webp" loading="eager" alt="package of everything bagel egglife egg white wraps next to a hand holding a breakfast wrap sandwich" class="c-img"/> -->
-  <img src="src/images/apple-inhand.png" loading="eager" alt="package of everything bagel egglife egg white wraps next to a hand holding a breakfast wrap sandwich" class="c-img"/>
+  <img src="src/images/tomato.png" loading="eager" alt="package of everything bagel egglife egg white wraps next to a hand holding a breakfast wrap sandwich" class="c-img"/>
 </div>
 </div>
 <div class="swiper-slide hm-product js-hero-slider__product">
   <div class="c-img-contain slider is-4">
   <!-- <img src="https://cdn.prod.website-files.com/6448cbe9ce99d3adb517fb98/6448cbe9ce99d3c02317fc8b_hero-img-01.webp" loading="eager" alt="package of italian style egglife egg white wraps next to a plate of vegetable wrap sandwiches" class="c-img"/> -->
-  <img src="src/images/carter.png" loading="eager" alt="package of italian style egglife egg white wraps next to a plate of vegetable wrap sandwiches" class="c-img"/>
+  <img src="src/images/rice.png" loading="eager" alt="package of italian style egglife egg white wraps next to a plate of vegetable wrap sandwiches" class="c-img"/>
 </div>
 </div>
 <div class="swiper-slide hm-product js-hero-slider__product">
@@ -1130,20 +1148,38 @@ input:-webkit-autofill:active {
   <div form-scale="" class="o-row hm-community">
   <div class="o-col _w-12 md-w-16 sm-w-24">
   <div class="c-culinary-title margin-56">
-  <h2 class="t-display-2">Join our culinary community</h2>
+  <h2 class="t-display-2">Join the Go-Shop Community</h2>
   <div class="c-img-contain sticker">
   <img src="https://cdn.prod.website-files.com/6448cbe9ce99d3adb517fb98/6448cbe9ce99d3648617fc07_badge-bg.svg" loading="lazy" alt="" class="c-img"/>
-  <img src="https://cdn.prod.website-files.com/6448cbe9ce99d3adb517fb98/6448cbe9ce99d33dcc17fc03_badge-txt.svg" loading="lazy" sticker-rotation="" alt="supreme protein graphic" class="c-img cover"/>
+  <img src="src/images/stamp.png" loading="lazy" sticker-rotation="" alt="supreme protein graphic" class="c-img cover"/>
+  <!-- <img src="https://cdn.prod.website-files.com/6448cbe9ce99d3adb517fb98/6448cbe9ce99d33dcc17fc03_badge-txt.svg" loading="lazy" sticker-rotation="" alt="supreme protein graphic" class="c-img cover"/> -->
 </div>
 </div>
 <div class="o-col _w-17 sm-w-24">
-  <p class="t-body-2">Stay up to date, discover delicious recipes, and enjoy $1.00 off your first pack of egglife egg white wraps.</p>
+  <p class="t-body-2">Stay up to date, discover new features, enjoy coupons, save on deals, and support the best shopping app.</p>
 </div>
 </div>
 <div class="o-col _w-9 md-w-24">
   <div class="c-form klaviyo-culinary w-embed">
   <div class="klaviyo-form-V47GMJ">
-
+  <form method="get" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" class="klaviyo_gdpr_embed_xevcat" name="email-form-culinary" data-name="Email Form Culinary" target="_blank" action="//manage.kmail-lists.com/subscriptions/subscribe" novalidate="novalidate" id="email_signup_culinary">
+    <div class="c-form-item">
+      <input class="c-form-input klaviyo-culinary w-input" maxlength="256" name="email" data-name="Email" placeholder="Email address" type="email" id="k_id_email_culinary" required=""/>
+    </div>
+    <div class="c-form-item">
+      <select class="c-form-input klaviyo-culinary w-input" name="region" data-name="Region" id="k_id_region_culinary" required="">
+        <option value="">Select Region</option>
+        <option value="Greater Accra">Greater Accra</option>
+        <option value="Eastern">Eastern</option>
+        <option value="Ashanti">Ashanti</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="c-form-item">
+      <button type="submit" class="c-form-submit">Join Community</button>
+    </div>
+    <input type="hidden" name="g" value="XeVcaT">
+  </form>
 </div>
 
 <style>
@@ -1217,6 +1253,22 @@ input[type=email]:-webkit-autofill:active {
 
 .klaviyo-culinary input[type]:hover {
 	color: #F4F2E6 !important;
+}
+
+.c-form-submit {
+  background-color: #FED141;
+  color: #303A4D;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.c-form-submit:hover {
+  background-color: #E6C73A;
 }
 
 @media only screen and (max-width: 991px) {
@@ -2306,6 +2358,17 @@ input#downshift-0-input:-webkit-autofill:active {
   <input type="hidden" name="g" value="XeVcaT">
 </div>
 </div>
+  <div class="c-form-item submit">
+  <div class="klaviyo_field_group">
+  <select class="c-form-input community-select w-input" name="region" data-name="Region" id="k_id_region" tabindex="-1" required="">
+    <option value="">Select Region</option>
+    <option value="Greater Accra">Greater Accra</option>
+    <option value="Eastern">Eastern</option>
+    <option value="Ashanti">Ashanti</option>
+    <option value="Other">Other</option>
+  </select>
+</div>
+</div>
   <div class="c-line footer-submit">
   
 </div>
@@ -2727,6 +2790,14 @@ function observeEditor() {
     custom_success_message: true,
 		extra_properties: {
       $signup_location: 'Home Page'
+    }
+  });
+
+  KlaviyoSubscribe.attachToForms('#email_signup_culinary', {
+    hide_form_on_success: true,
+    custom_success_message: true,
+		extra_properties: {
+      $signup_location: 'Community Section'
     }
   });
 </script>
